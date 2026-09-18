@@ -154,6 +154,7 @@ function initScrollReveals() {
       stagger: 0.15,
       duration: 0.85,
       ease: 'power2.out',
+      immediateRender: false,
       scrollTrigger: {
         trigger: '.philosophy-grid',
         start: 'top 80%'
@@ -170,6 +171,7 @@ function initScrollReveals() {
       stagger: 0.2,
       duration: 0.9,
       ease: 'power2.out',
+      immediateRender: false,
       scrollTrigger: {
         trigger: '.team-grid',
         start: 'top 80%'

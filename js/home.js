@@ -252,6 +252,7 @@ function initScrollReveals() {
       stagger: 0.15,
       duration: 0.9,
       ease: 'power2.out',
+      immediateRender: false,
       scrollTrigger: {
         trigger: '.services-grid',
         start: 'top 80%'
