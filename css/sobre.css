@@ -1,0 +1,397 @@
+/* ==========================================================================
+   FOTOVAR - SOBRE (ABOUT) STYLES
+   Styles for Studio Manifesto, Journey Timeline, Philosophy, Gear & Team
+   ========================================================================== */
+
+/* --- ABOUT HERO --- */
+.about-hero {
+  padding-top: calc(var(--header-height) + 3.5rem);
+  padding-bottom: 5rem;
+  background: radial-gradient(circle at 30% 20%, rgba(245, 158, 11, 0.05) 0%, transparent 50%),
+              var(--bg-dark);
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .about-hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.about-manifesto-lead {
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  color: var(--text-pure);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+}
+
+.about-hero-img-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--border-medium);
+}
+
+.about-hero-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s ease;
+}
+
+.about-hero-img-wrap:hover .about-hero-img {
+  transform: scale(1.03);
+}
+
+/* --- PHILOSOPHY PILLARS --- */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .philosophy-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.philosophy-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.philosophy-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.philosophy-card:hover {
+  border-color: var(--border-accent);
+  background: var(--bg-card-hover);
+  transform: translateY(-6px);
+}
+
+.philosophy-card:hover::before {
+  opacity: 1;
+}
+
+.philosophy-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin-bottom: 1.75rem;
+}
+
+.philosophy-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-pure);
+  margin-bottom: 1rem;
+}
+
+.philosophy-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* --- ANIMATED TIMELINE --- */
+.timeline-section {
+  position: relative;
+  background: #09090c;
+  overflow: hidden;
+}
+
+.timeline-wrap {
+  position: relative;
+  max-width: 860px;
+  margin: 3.5rem auto 0;
+  padding: 2rem 0;
+}
+
+/* Center vertical beam */
+.timeline-track-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(-50%);
+}
+
+.timeline-glow-bar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 0%;
+  background: linear-gradient(180deg, var(--accent) 0%, #fbbf24 100%);
+  box-shadow: 0 0 12px var(--accent);
+  transform: translateX(-50%);
+  transform-origin: top;
+}
+
+@media (max-width: 767px) {
+  .timeline-track-line,
+  .timeline-glow-bar {
+    left: 24px;
+  }
+}
+
+.timeline-node {
+  position: relative;
+  margin-bottom: 4rem;
+  display: flex;
+  width: 100%;
+}
+
+.timeline-node:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-node:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.timeline-node:nth-child(even) {
+  justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+  .timeline-node:nth-child(odd),
+  .timeline-node:nth-child(even) {
+    justify-content: flex-start;
+    padding-left: 60px;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: var(--bg-darker);
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.6);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+@media (max-width: 767px) {
+  .timeline-dot {
+    left: 24px;
+  }
+}
+
+.timeline-content-card {
+  width: 44%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 1.85rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.timeline-content-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+}
+
+@media (max-width: 767px) {
+  .timeline-content-card {
+    width: 100%;
+  }
+}
+
+.timeline-year {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.timeline-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-pure);
+  margin-bottom: 0.75rem;
+}
+
+.timeline-desc {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* --- TECHNICAL GEAR SHOWCASE --- */
+.gear-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .gear-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gear-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gear-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  transform-style: preserve-3d;
+}
+
+.gear-card:hover {
+  border-color: var(--accent);
+}
+
+.gear-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.gear-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-pure);
+  margin-bottom: 0.5rem;
+}
+
+.gear-model {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.gear-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* --- TEAM SECTION --- */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.team-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  transition: all var(--transition-normal);
+}
+
+.team-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-8px);
+}
+
+.team-photo-wrap {
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease, filter 0.5s ease;
+  filter: grayscale(30%);
+}
+
+.team-card:hover .team-photo {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.team-info {
+  padding: 2rem 1.75rem;
+}
+
+.team-name {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-pure);
+  margin-bottom: 0.35rem;
+}
+
+.team-role {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.team-bio {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+

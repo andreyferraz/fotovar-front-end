@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOTOVAR | Estúdio de Fotografia & Arte Visual</title>
+  <meta name="description" content="Estúdio de alta fotografia autoral, editorial, casamentos de luxo e projetos conceituais. Transformamos instantes em legados visuais.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true">
+    <span class="cursor-text">VER</span>
+  </div>
+
+  <!-- Shutter Page Transition Curtain -->
+  <div class="shutter-transition" aria-hidden="true">
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo-wrap" aria-label="FOTOVAR Home">
+        <img src="assets/img/logo.png" alt="FOTOVAR" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="portfolio.html" class="nav-link">Portfólio</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="contato.html" class="btn btn-primary header-cta btn-magnetic">
+          <span>Agendar Sessão</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="menu-toggle-btn" aria-label="Abrir Menu" aria-expanded="false">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">
+        <span>01</span> Home
+      </a>
+      <a href="sobre.html" class="mobile-nav-link">
+        <span>02</span> Sobre
+      </a>
+      <a href="portfolio.html" class="mobile-nav-link">
+        <span>03</span> Portfólio
+      </a>
+      <a href="contato.html" class="mobile-nav-link">
+        <span>04</span> Contato
+      </a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <a href="contato.html" class="btn btn-primary">
+        <span>Solicitar Orçamento</span>
+        <i class="fa-solid fa-camera"></i>
+      </a>
+      <div class="mobile-socials">
+        <a href="#" class="btn-icon-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="btn-icon-circle" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        <a href="#" class="btn-icon-circle" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-badge-row">
+              <span class="section-tag">
+                <i class="fa-solid fa-circle-dot"></i> Estúdio Criativo & Editorial
+              </span>
+              <div class="telemetry-badge">
+                <span class="rec-dot"></span>
+                <span>REC • 4K 60FPS</span>
+              </div>
+            </div>
+
+            <h1 class="hero-title">
+              A ARTE DE ETERNIZAR O <span class="text-gradient">INVISÍVEL</span>.
+            </h1>
+
+            <p class="hero-description">
+              Estúdio de alta fotografia autoral, editorial de moda, casamentos exclusivos e projetos conceituais. Combinamos domínio absoluto da luz com uma narrativa sensível e cinematográfica.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="portfolio.html" class="btn btn-primary btn-magnetic">
+                <span>Explorar Portfólio</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="contato.html" class="btn btn-secondary btn-magnetic">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Agendar Ensaio</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Visual with 3D Parallax & Badges -->
+          <div class="hero-visual">
+            <!-- Viewfinder Corner Accents -->
+            <div class="viewfinder-corner tl"></div>
+            <div class="viewfinder-corner tr"></div>
+            <div class="viewfinder-corner bl"></div>
+            <div class="viewfinder-corner br"></div>
+
+            <div class="hero-image-wrapper has-view-cursor">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85" 
+                   alt="Retrato Editorial Fotovar" 
+                   class="hero-img"
+                   onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="hero-floating-badge badge-awards">
+              <i class="fa-solid fa-trophy"></i>
+              <div>
+                <div class="badge-text-title">38 Prêmios Internacionais</div>
+                <div class="badge-text-sub">Fine Art & Wedding Awards</div>
+              </div>
+            </div>
+
+            <div class="hero-floating-badge badge-specs font-mono">
+              <i class="fa-solid fa-sliders text-accent" style="color: var(--accent);"></i>
+              <div>
+                <div class="badge-text-title">50mm • f/1.2</div>
+                <div class="badge-text-sub">1/2000s • ISO 100</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INFINITE MARQUEE STRIP -->
+    <section class="marquee-strip" aria-label="Destaques">
+      <div class="marquee-track">
+        <div class="marquee-item">RETRATOS FINE ART <i class="fa-solid fa-asterisk"></i></div>
+        <div class="marquee-item">EDITORIAL DE MODA <i class="fa-solid fa-asterisk"></i></div>
+        <div class="marquee-item">CASAMENTOS DE LUXO <i class="fa-solid fa-asterisk"></i></div>
+        <div class="marquee-item">ARQUITETURA & DESIGN <i class="fa-solid fa-asterisk"></i></div>
+        <div class="marquee-item">DIREÇÃO CINEMATOGRÁFICA <i class="fa-solid fa-asterisk"></i></div>
+        <div class="marquee-item">CAMPANHAS GLOBAIS <i class="fa-solid fa-asterisk"></i></div>
+      </div>
+    </section>
+
+    <!-- PINNED HORIZONTAL GALLERY REEL -->
+    <section class="reel-section section-spacing" id="obras-destaque">
+      <div class="container">
+        <div class="reel-header">
+          <div>
+            <span class="section-tag"><i class="fa-solid fa-camera-retro"></i> Seleção Curada</span>
+            <h2 class="section-title">Obras em Destaque</h2>
+          </div>
+          <p class="section-desc">
+            Navegue horizontalmente pelos nossos projetos mais marcantes e premiados ao redor do mundo.
+          </p>
+        </div>
+      </div>
+
+      <!-- Horizontal scrolling track -->
+      <div class="reel-container">
+        <!-- Card 1 -->
+        <article class="reel-card has-view-cursor">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=85" 
+               alt="Sombra & Alma - Retrato Autoral" 
+               class="reel-card-img"
+               onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+          <div class="reel-card-overlay">
+            <span class="reel-card-category">Retrato Autoral</span>
+            <div class="reel-card-info">
+              <h3>Sombra & Alma</h3>
+              <p>Estudo de claroscuro e texturas orgânicas em estúdio intimista.</p>
+              <div class="reel-card-meta">
+                <span><i class="fa-solid fa-camera"></i> Hasselblad X2D</span>
+                <span><i class="fa-solid fa-location-dot"></i> São Paulo</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="reel-card has-view-cursor">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85" 
+               alt="Luz Dourada - Casamento na Toscana" 
+               class="reel-card-img"
+               onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+          <div class="reel-card-overlay">
+            <span class="reel-card-category">Casamento Exclusivo</span>
+            <div class="reel-card-info">
+              <h3>Luz Dourada</h3>
+              <p>Cerimônia cinematográfica ao entardecer nos vinhedos italianos.</p>
+              <div class="reel-card-meta">
+                <span><i class="fa-solid fa-camera"></i> Leica SL2</span>
+                <span><i class="fa-solid fa-location-dot"></i> Toscana, Itália</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="reel-card has-view-cursor">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85" 
+               alt="Aura Noturna - Editorial de Moda" 
+               class="reel-card-img"
+               onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+          <div class="reel-card-overlay">
+            <span class="reel-card-category">Fashion Editorial</span>
+            <div class="reel-card-info">
+              <h3>Aura Noturna</h3>
+              <p>Campanha outono-inverno inspirada em neon e silhuetas cortantes.</p>
+              <div class="reel-card-meta">
+                <span><i class="fa-solid fa-camera"></i> Sony A1</span>
+                <span><i class="fa-solid fa-location-dot"></i> Paris, França</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="reel-card has-view-cursor">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85" 
+               alt="Monolito Moderno - Arquitetura" 
+               class="reel-card-img"
+               onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+          <div class="reel-card-overlay">
+            <span class="reel-card-category">Arquitetura</span>
+            <div class="reel-card-info">
+              <h3>Monolito Moderno</h3>
+              <p>Ensaio estrutural explorando o encontro entre concreto e luz zenital.</p>
+              <div class="reel-card-meta">
+                <span><i class="fa-solid fa-camera"></i> Canon R5C</span>
+                <span><i class="fa-solid fa-location-dot"></i> Brasília</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="reel-card has-view-cursor">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1000&q=85" 
+               alt="Gênese - Fine Art" 
+               class="reel-card-img"
+               onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+          <div class="reel-card-overlay">
+            <span class="reel-card-category">Fine Art</span>
+            <div class="reel-card-info">
+              <h3>Gênese</h3>
+              <p>Retrato premiado explorando pigmentos naturais e expressão humana.</p>
+              <div class="reel-card-meta">
+                <span><i class="fa-solid fa-camera"></i> Fujifilm GFX 100II</span>
+                <span><i class="fa-solid fa-location-dot"></i> Rio de Janeiro</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE APERTURE LENS SHOWCASE -->
+    <section class="aperture-section section-spacing">
+      <div class="container">
+        <div class="aperture-grid">
+          
+          <div>
+            <span class="section-tag"><i class="fa-solid fa-circle-notch"></i> Filosofia Óptica</span>
+            <h2 class="section-title">Onde a Luz Encontra o Instante Exato.</h2>
+            <p class="section-desc" style="margin-bottom: 2rem;">
+              O obturador de uma câmera não apenas congela frações de segundo. Ele decide quanto do mundo tem permissão para entrar na imagem. Controlamos a profundidade de campo, a difração e a atmosfera para que cada clique revele uma história singular.
+            </p>
+
+            <ul style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2.5rem;">
+              <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                <div class="btn-icon-circle" style="width: 36px; height: 36px; font-size: 0.85rem; color: var(--accent);"><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <h4 style="color: #fff; font-family: var(--font-heading); margin-bottom: 0.2rem;">Lentes Prime Ultra Luminosas</h4>
+                  <p style="color: var(--text-secondary); font-size: 0.9rem;">Desfoque cremoso e separação tridimensional de planos sem igual.</p>
+                </div>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                <div class="btn-icon-circle" style="width: 36px; height: 36px; font-size: 0.85rem; color: var(--accent);"><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <h4 style="color: #fff; font-family: var(--font-heading); margin-bottom: 0.2rem;">Colorimetria e Tratamento Autoral</h4>
+                  <p style="color: var(--text-secondary); font-size: 0.9rem;">Gradação de cor inspirada em películas de cinema analógico clássico.</p>
+                </div>
+              </li>
+            </ul>
+
+            <a href="sobre.html" class="btn btn-secondary btn-magnetic">
+              <span>Conhecer Nossa História</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Interactive Graphic (Click to cycle f-stop) -->
+          <div class="aperture-visual-box">
+            <div class="aperture-shutter-graphic clickable" title="Clique para alternar o f-stop">
+              <div class="aperture-outer-ring"></div>
+              
+              <!-- SVG Blades Representation -->
+              <svg viewBox="0 0 400 400" width="100%" height="100%" style="position: absolute; inset: 0;">
+                <circle cx="200" cy="200" r="160" stroke="rgba(245, 158, 11, 0.2)" stroke-width="2" fill="none"/>
+                <g class="aperture-blades-group" fill="#14141c" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5">
+                  <path class="aperture-svg-blade" d="M200 60 L280 160 L200 200 Z" />
+                  <path class="aperture-svg-blade" d="M320 130 L320 250 L200 200 Z" />
+                  <path class="aperture-svg-blade" d="M320 270 L240 340 L200 200 Z" />
+                  <path class="aperture-svg-blade" d="M200 340 L120 340 L200 200 Z" />
+                  <path class="aperture-svg-blade" d="M80 270 L80 150 L200 200 Z" />
+                  <path class="aperture-svg-blade" d="M80 130 L160 60 L200 200 Z" />
+                </g>
+              </svg>
+
+              <div class="aperture-center-hub">
+                <span class="aperture-f-number">f/1.4</span>
+                <span class="aperture-hub-label">APERTURE DIAPHRAGM</span>
+                <span style="font-size: 0.65rem; color: var(--accent); margin-top: 4px;">CLIQUE PARA ALTERNAR</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS COUNTER SECTION -->
+    <section class="stats-section section-spacing">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="12">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Anos Dedicados à Arte da Imagem</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="1450">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Ensaios & Histórias Eternizadas</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="38">0</span>
+            </div>
+            <div class="stat-label">Prêmios Nacionais & Globais</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="100">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-label">Visão Autoral & Atendimento Exclusivo</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / ESPECIALIDADES -->
+    <section class="services-section section-spacing" id="servicos">
+      <div class="container">
+        <div style="margin-bottom: 3.5rem; text-align: center;">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Nossas Vertentes</span>
+          <h2 class="section-title">Especialidades Fotográficas</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Cada projeto demanda uma atmosfera, um ritmo e uma iluminação sob medida. Conheça nossos formatos de trabalho.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div>
+              <span class="service-num">01 // ESSÊNCIA</span>
+              <h3 class="service-title">Retratos & Ensaios Autorais</h3>
+              <p class="service-desc">
+                Sessões intimistas que vão além do superficial para capturar a verdade, a força e a vulnerabilidade de cada personalidade.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag-item">Personal Branding</span>
+                <span class="service-tag-item">Fine Art</span>
+                <span class="service-tag-item">Artistas & Criadores</span>
+              </div>
+            </div>
+            <a href="portfolio.html?cat=retratos" class="service-link">
+              <span>Ver Trabalhos de Retrato</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div>
+              <span class="service-num">02 // VANGUARDA</span>
+              <h3 class="service-title">Editorial & Moda</h3>
+              <p class="service-desc">
+                Campanhas e lookbooks para marcas e revistas que exigem estética de ponta, direção criativa refinada e storytelling contemporâneo.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag-item">Campanhas Globais</span>
+                <span class="service-tag-item">Lookbooks</span>
+                <span class="service-tag-item">Revistas & Capas</span>
+              </div>
+            </div>
+            <a href="portfolio.html?cat=editorial" class="service-link">
+              <span>Ver Trabalhos de Moda</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div>
+              <span class="service-num">03 // CELEBRAÇÃO</span>
+              <h3 class="service-title">Casamentos Exclusivos</h3>
+              <p class="service-desc">
+                Coberturas documentais com sensibilidade artística para casamentos de destino e celebrações autênticas pelo mundo.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag-item">Destination Weddings</span>
+                <span class="service-tag-item">Documental Poético</span>
+                <span class="service-tag-item">Livros Fine Art</span>
+              </div>
+            </div>
+            <a href="portfolio.html?cat=casamentos" class="service-link">
+              <span>Ver Álbuns de Casamento</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div>
+              <span class="service-num">04 // ESPAÇO</span>
+              <h3 class="service-title">Arquitetura & Design</h3>
+              <p class="service-desc">
+                Registro de obras arquitetônicas, hotéis boutique e design de interiores com rigor nas geometrias e na passagem da luz solar.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag-item">Projetos Arquitetônicos</span>
+                <span class="service-tag-item">Hotelaria de Luxo</span>
+                <span class="service-tag-item">Design de Interiores</span>
+              </div>
+            </div>
+            <a href="portfolio.html?cat=arquitetura" class="service-link">
+              <span>Ver Obras Arquitetônicas</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section section-spacing" style="background: #08080a;">
+      <div class="container">
+        <div style="margin-bottom: 3.5rem;">
+          <span class="section-tag"><i class="fa-solid fa-quote-left"></i> Depoimentos</span>
+          <h2 class="section-title">Palavras de Quem Sentiu a Experiência</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "A equipe da FOTOVAR tem uma sensibilidade rara. Eles não apenas registraram o nosso casamento na serra, eles traduziram o sentimento do dia em fotos que parecem quadros de cinema."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Isabella Mendes" class="author-avatar">
+              <div>
+                <div class="author-name">Isabella & Mateus</div>
+                <div class="author-role">Casamento em Campos do Jordão</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Para a nossa coleção de verão, precisávamos de uma linguagem que fugisse do convencional. O resultado entregue superou todas as expectativas da nossa diretoria de arte."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Lucas Ferraz" class="author-avatar">
+              <div>
+                <div class="author-name">Lucas Valente</div>
+                <div class="author-role">Diretor de Arte, Atelier Noir</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Fazer meu ensaio autoral com a FOTOVAR foi um processo transformador. O respeito pelo meu tempo, a iluminação milimétrica e a atmosfera do estúdio criaram fotos que me representam por inteiro."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Dra. Helena Costa" class="author-avatar">
+              <div>
+                <div class="author-name">Dra. Helena Costa</div>
+                <div class="author-role">Ensaio Autoral de Branding</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRE-FOOTER CTA -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="section-tag" style="margin-bottom: 1.5rem;"><i class="fa-solid fa-sparkles"></i> Vamos Criar Juntos</span>
+          <h2 class="section-title" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+            Pronto Para Eternizar Sua Visão Através de Nossas Lentes?
+          </h2>
+          <p class="section-desc" style="margin: 0 auto 2.5rem auto;">
+            Seja um ensaio autoral, uma campanha de alta moda ou o registro do seu casamento, entre em contato para desenharmos uma proposta sob medida.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="contato.html" class="btn btn-primary btn-magnetic">
+              <span>Iniciar Conversa</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+            <a href="portfolio.html" class="btn btn-secondary btn-magnetic">
+              <span>Ver Mais Projetos</span>
+              <i class="fa-solid fa-images"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Col -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo-wrap">
+            <img src="assets/img/logo.png" alt="FOTOVAR" class="brand-logo-img">
+          </a>
+          <p>
+            Estúdio fotográfico contemporâneo dedicado a registrar memórias, arte e marcas através de uma ótica cinematográfica e autoral.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+            <a href="#" class="footer-social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation Col -->
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre o Estúdio</a></li>
+            <li><a href="portfolio.html">Portfólio Completo</a></li>
+            <li><a href="contato.html">Contato & Orçamentos</a></li>
+          </ul>
+        </div>
+
+        <!-- Verticals Col -->
+        <div>
+          <h4 class="footer-col-title">Especialidades</h4>
+          <ul class="footer-nav-list">
+            <li><a href="portfolio.html?cat=retratos">Retratos Fine Art</a></li>
+            <li><a href="portfolio.html?cat=editorial">Moda & Editorial</a></li>
+            <li><a href="portfolio.html?cat=casamentos">Casamentos Exclusivos</a></li>
+            <li><a href="portfolio.html?cat=arquitetura">Arquitetura & Espaços</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Col -->
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Fique Conectado</h4>
+          <p>Receba convites para exposições e lançamentos de ensaios exclusivos.</p>
+          <form class="footer-input-group" onsubmit="event.preventDefault(); alert('Obrigado! Você agora receberá nossas novidades.');">
+            <input type="email" placeholder="Seu e-mail..." required aria-label="Seu e-mail para newsletter">
+            <button type="submit" class="btn-icon-circle" style="width: 34px; height: 34px;" aria-label="Inscrever">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 FOTOVAR Studio. Todos os direitos reservados.
+        </div>
+        <div class="back-to-top-btn btn-magnetic">
+          <span>Voltar ao topo</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP 3 & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/global.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
+

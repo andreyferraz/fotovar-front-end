@@ -1,0 +1,405 @@
+/* ==========================================================================
+   FOTOVAR - CONTATO (CONTACT) STYLES
+   Styles for Booking Inquiry Form, Category Pills, Studio Info & FAQ Accordion
+   ========================================================================== */
+
+/* --- CONTACT HERO --- */
+.contact-hero {
+  padding-top: calc(var(--header-height) + 3.5rem);
+  padding-bottom: 3rem;
+  background: radial-gradient(circle at 70% 20%, rgba(245, 158, 11, 0.07) 0%, transparent 60%),
+              var(--bg-dark);
+}
+
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 992px) {
+  .contact-layout-grid {
+    grid-template-columns: 1.25fr 0.75fr;
+  }
+}
+
+/* --- INTERACTIVE BOOKING FORM --- */
+.contact-form-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .contact-form-card {
+    padding: 3.5rem;
+  }
+}
+
+.form-group-label {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-pure);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Service Pill Selector */
+.service-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 2.25rem;
+}
+
+.service-pill-btn {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  padding: 0.6rem 1.15rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.service-pill-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--border-medium);
+  color: var(--text-pure);
+}
+
+.service-pill-btn.selected {
+  background: var(--accent);
+  color: #000000;
+  border-color: var(--accent);
+  font-weight: 600;
+  box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+/* Form Inputs Grid */
+.form-grid-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .form-grid-row.two-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 0.95rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text-pure);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+  width: 100%;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+
+.form-select option {
+  background: #14141a;
+  color: var(--text-pure);
+}
+
+.form-textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-submit-row {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.form-privacy-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  max-width: 320px;
+  line-height: 1.5;
+}
+
+/* Success Celebration Banner */
+.form-success-message {
+  display: none;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid var(--accent);
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.form-success-message i {
+  font-size: 3rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.form-success-message h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--text-pure);
+  margin-bottom: 0.5rem;
+}
+
+.form-success-message p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* --- STUDIO INFO SIDEBAR --- */
+.contact-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.studio-info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 2.25rem;
+}
+
+.studio-info-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-pure);
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.studio-info-title i {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.studio-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.studio-contact-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.studio-contact-item i {
+  color: var(--accent);
+  margin-top: 4px;
+  font-size: 1rem;
+}
+
+.contact-detail-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.contact-detail-val {
+  color: var(--text-main);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.contact-detail-val a:hover {
+  color: var(--accent);
+}
+
+/* Stylized Map Card */
+.studio-map-card {
+  position: relative;
+  height: 240px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: #111116;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.25;
+  background-image: radial-gradient(#ffffff 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.map-pin-pulse {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.map-pin-marker {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin: 0 auto 0.75rem auto;
+  box-shadow: 0 0 25px var(--accent);
+  animation: pulse-pin 2.2s infinite;
+}
+
+@keyframes pulse-pin {
+  0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+  70% { box-shadow: 0 0 0 20px rgba(245, 158, 11, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+}
+
+.map-pin-label {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-pure);
+}
+
+/* --- FAQ ACCORDION --- */
+.faq-section {
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+  background: #08080a;
+}
+
+.faq-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.faq-accordion-list {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.faq-item:hover {
+  border-color: var(--border-medium);
+}
+
+.faq-item.active {
+  border-color: var(--border-accent);
+}
+
+.faq-question-btn {
+  width: 100%;
+  padding: 1.6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.faq-question-text {
+  font-family: var(--font-heading);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--text-pure);
+}
+
+.faq-chevron {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  transition: transform 0.35s ease, background-color 0.2s ease;
+}
+
+.faq-item.active .faq-chevron {
+  transform: rotate(180deg);
+  background: var(--accent);
+  color: #000;
+}
+
+.faq-answer-collapse {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-answer-body {
+  padding: 0 2rem 1.75rem 2rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  padding-top: 1.25rem;
+}
+

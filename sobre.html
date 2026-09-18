@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós | FOTOVAR Studio</title>
+  <meta name="description" content="Conheça a história, filosofia artística e equipe por trás do FOTOVAR Studio. Mais de 12 anos dedicados à fotografia de autor e campanhas exclusivas.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/sobre.css">
+</head>
+<body>
+
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true">
+    <span class="cursor-text">VER</span>
+  </div>
+
+  <!-- Shutter Page Transition Curtain -->
+  <div class="shutter-transition" aria-hidden="true">
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo-wrap" aria-label="FOTOVAR Home">
+        <img src="assets/img/logo.png" alt="FOTOVAR" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sobre.html" class="nav-link active">Sobre</a>
+        <a href="portfolio.html" class="nav-link">Portfólio</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="contato.html" class="btn btn-primary header-cta btn-magnetic">
+          <span>Agendar Sessão</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="menu-toggle-btn" aria-label="Abrir Menu" aria-expanded="false">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">
+        <span>01</span> Home
+      </a>
+      <a href="sobre.html" class="mobile-nav-link active">
+        <span>02</span> Sobre
+      </a>
+      <a href="portfolio.html" class="mobile-nav-link">
+        <span>03</span> Portfólio
+      </a>
+      <a href="contato.html" class="mobile-nav-link">
+        <span>04</span> Contato
+      </a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <a href="contato.html" class="btn btn-primary">
+        <span>Solicitar Orçamento</span>
+        <i class="fa-solid fa-camera"></i>
+      </a>
+      <div class="mobile-socials">
+        <a href="#" class="btn-icon-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="btn-icon-circle" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        <a href="#" class="btn-icon-circle" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero-grid">
+          
+          <div>
+            <span class="section-tag"><i class="fa-solid fa-compass"></i> Manifesto & Origem</span>
+            <h1 class="section-title">
+              Construindo Imagens que Resistem ao Tempo.
+            </h1>
+            <p class="about-manifesto-lead">
+              "Acreditamos que uma grande fotografia não é apenas um registro ótico do que existe, mas um testemunho poético do que nunca mais existirá da mesma forma."
+            </p>
+            <p class="section-desc">
+              Fundada em São Paulo e com atuação em projetos internacionais, a FOTOVAR nasceu da inquietação em devolver à fotografia a sua dignidade artística. Em uma era de milhões de imagens descartáveis produzidas por segundo, nós escolhemos a lentidão da atenção, o respeito à geometria e o domínio minucioso das sombras.
+            </p>
+          </div>
+
+          <!-- Studio visual -->
+          <div class="about-hero-img-wrap has-view-cursor">
+            <div class="viewfinder-corner tl"></div>
+            <div class="viewfinder-corner tr"></div>
+            <div class="viewfinder-corner bl"></div>
+            <div class="viewfinder-corner br"></div>
+            <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=1200&q=85" 
+                 alt="Fotógrafo no estúdio Fotovar" 
+                 class="about-hero-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY / TRÊS PILARES -->
+    <section class="section-spacing" style="background: #08080b;">
+      <div class="container">
+        <div style="margin-bottom: 3.5rem;">
+          <span class="section-tag"><i class="fa-solid fa-shapes"></i> Método Criativo</span>
+          <h2 class="section-title">Nossa Filosofia Visual</h2>
+          <p class="section-desc">
+            Três princípios fundamentais que guiam cada disparo, do ensaio mais íntimo às grandes campanhas internacionais.
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+          <!-- Pillar 1 -->
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <h3 class="philosophy-title">O Domínio da Luz</h3>
+            <p class="philosophy-text">
+              Antes de pensar na luz, pensamos nas sombras. É a ausência de luz que revela a volumetria, os contornos da pele e a dramaticidade que transforma um retrato comum em uma pintura contemporânea.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <i class="fa-solid fa-vector-square"></i>
+            </div>
+            <h3 class="philosophy-title">Composição Rigorosa</h3>
+            <p class="philosophy-text">
+              Influenciados pela pintura renascentista e pelo cinema de vanguarda, nossos enquadramentos utilizam proporção áurea, linhas guias e pontos de tensão para criar equilíbrio e impacto imediato.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="philosophy-title">Conexão Humana</h3>
+            <p class="philosophy-text">
+              Técnica sem alma é apenas matemática. Dedicamos tempo genuíno para entender quem está à frente da câmera. Quando a vulnerabilidade encontra a segurança, a foto verdadeira acontece.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANIMATED TIMELINE -->
+    <section class="timeline-section section-spacing" id="trajetoria">
+      <div class="container">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+          <span class="section-tag"><i class="fa-solid fa-timeline"></i> Nossa História</span>
+          <h2 class="section-title">Uma Década de Narrativas</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Acompanhe os marcos que definiram a evolução do nosso olhar ao longo dos anos.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          <!-- Central glowing track -->
+          <div class="timeline-track-line"></div>
+          <div class="timeline-glow-bar"></div>
+
+          <!-- Node 1: 2014 -->
+          <div class="timeline-node">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-year">2014</span>
+              <h3 class="timeline-title">O Primeiro Estúdio</h3>
+              <p class="timeline-desc">
+                Inauguramos nosso primeiro espaço físico em São Paulo em um antigo galpão industrial, combinando revelação analógica e retratos de artistas plásticos e dramaturgos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Node 2: 2017 -->
+          <div class="timeline-node">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-year">2017</span>
+              <h3 class="timeline-title">Projetos Internacionais</h3>
+              <p class="timeline-desc">
+                Início das coberturas de destination weddings na Europa (Itália e Portugal) e primeira capa editorial para revista de moda em Paris.
+              </p>
+            </div>
+          </div>
+
+          <!-- Node 3: 2020 -->
+          <div class="timeline-node">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-year">2020</span>
+              <h3 class="timeline-title">Laboratório Fine Art Próprio</h3>
+              <p class="timeline-desc">
+                Instalação de impressoras museológicas de pigmento mineral e papéis de fibra de algodão, garantindo obras com durabilidade atestada de mais de 150 anos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Node 4: 2023 -->
+          <div class="timeline-node">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-year">2023</span>
+              <h3 class="timeline-title">Troféu Ouro em Viena</h3>
+              <p class="timeline-desc">
+                Reconhecimento internacional no Fine Art Photography Masters com a série "Sombra & Alma", consolidando o nome FOTOVAR no cenário global.
+              </p>
+            </div>
+          </div>
+
+          <!-- Node 5: 2026 -->
+          <div class="timeline-node">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-year">2026</span>
+              <h3 class="timeline-title">O Futuro do Olhar</h3>
+              <p class="timeline-desc">
+                Com mais de 1.400 histórias documentadas, expandimos nossas instalações para abrigar residências artísticas e workshops de direção cinematográfica.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL ARSENAL / THE KIT (3D TILT CARDS) -->
+    <section class="section-spacing" style="background: #0b0b0e;">
+      <div class="container">
+        <div style="margin-bottom: 3.5rem;">
+          <span class="section-tag"><i class="fa-solid fa-camera"></i> Precisão Óptica</span>
+          <h2 class="section-title">O Arsenal Técnico</h2>
+          <p class="section-desc">
+            A tecnologia não substitui a sensibilidade, mas liberta a criatividade. Trabalhamos exclusivamente com o que há de mais refinado na ótica mundial.
+          </p>
+        </div>
+
+        <div class="gear-grid">
+          
+          <!-- Gear 1 -->
+          <div class="gear-card">
+            <div class="gear-icon"><i class="fa-solid fa-camera"></i></div>
+            <h3 class="gear-title">Médio Formato</h3>
+            <span class="gear-model">Hasselblad X2D 100C</span>
+            <p class="gear-desc">
+              Sensor com 100 Megapixels e profundidade de cor de 16-bits para capturar gradientes tonais e microtexturas inacessíveis em sistemas convencionais.
+            </p>
+          </div>
+
+          <!-- Gear 2 -->
+          <div class="gear-card">
+            <div class="gear-icon"><i class="fa-solid fa-eye"></i></div>
+            <h3 class="gear-title">Preto & Branco Puro</h3>
+            <span class="gear-model">Leica M11 Monochrom</span>
+            <p class="gear-desc">
+              Sensor dedicado exclusivamente ao preto e branco, sem matriz de cores Bayer, proporcionando nitidez cristalina e gradações cinzentas orgânicas.
+            </p>
+          </div>
+
+          <!-- Gear 3 -->
+          <div class="gear-card">
+            <div class="gear-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3 class="gear-title">Luz de Cinema</h3>
+            <span class="gear-model">Broncolor & Aputure Pro</span>
+            <p class="gear-desc">
+              Modificadores para-bólicos e difusores gigantes de 2.2m que envolvem o sujeito com a mesma suavidade e textura da luz de uma janela natural.
+            </p>
+          </div>
+
+          <!-- Gear 4 -->
+          <div class="gear-card">
+            <div class="gear-icon"><i class="fa-solid fa-scroll"></i></div>
+            <h3 class="gear-title">Impressão Museológica</h3>
+            <span class="gear-model">Hahnemühle Photo Rag</span>
+            <p class="gear-desc">
+              Papéis 100% algodão de 308g/m² com tintas de pigmento mineral UltraChrome Pro, assegurando fidelidade atemporal a cada cópia física.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- THE TEAM / MENTES CRIATIVAS -->
+    <section class="section-spacing" style="background: #08080a;">
+      <div class="container">
+        <div style="margin-bottom: 3.5rem;">
+          <span class="section-tag"><i class="fa-solid fa-users"></i> Equipe Principal</span>
+          <h2 class="section-title">Mentes Criativas</h2>
+          <p class="section-desc">
+            Conheça os profissionais que colocam o coração e o olhar em cada projeto da FOTOVAR.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          
+          <!-- Member 1 -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=85" 
+                   alt="André Vianna" 
+                   class="team-photo"
+                   onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">André Vianna</h3>
+              <span class="team-role">Fundador & Fotógrafo Chefe</span>
+              <p class="team-bio">
+                Especialista em retratos psicológicos e direção editorial. Com passagens por galerias em Milão e Nova York, André lidera o tom estético do estúdio.
+              </p>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85" 
+                   alt="Clara Montalban" 
+                   class="team-photo"
+                   onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Clara Montalban</h3>
+              <span class="team-role">Diretora de Iluminação & Colorista</span>
+              <p class="team-bio">
+                Cineasta de formação, Clara é responsável pela construção de atmosferas de luz únicas e pela colorimetria autoral que é marca registrada da FOTOVAR.
+              </p>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85" 
+                   alt="Gabriel Siqueira" 
+                   class="team-photo"
+                   onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Gabriel Siqueira</h3>
+              <span class="team-role">Produtor Executivo & Cenógrafo</span>
+              <p class="team-bio">
+                Especialista em viabilizar produções complexas, locações exclusivas e cenários imersivos para marcas globais e casamentos de luxo.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRE-FOOTER CTA -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="section-tag"><i class="fa-solid fa-sparkles"></i> Próximo Passo</span>
+          <h2 class="section-title">Venha Tomar um Café em Nosso Estúdio</h2>
+          <p class="section-desc" style="margin: 0 auto 2.5rem auto;">
+            Adoramos receber novos clientes para conversar sobre ideias, ver impressões fine art ao vivo e planejar ensaios memoráveis.
+          </p>
+          <a href="contato.html" class="btn btn-primary btn-magnetic">
+            <span>Agendar Uma Visita</span>
+            <i class="fa-solid fa-calendar-check"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Col -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo-wrap">
+            <img src="assets/img/logo.png" alt="FOTOVAR" class="brand-logo-img">
+          </a>
+          <p>
+            Estúdio fotográfico contemporâneo dedicado a registrar memórias, arte e marcas através de uma ótica cinematográfica e autoral.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+            <a href="#" class="footer-social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation Col -->
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre o Estúdio</a></li>
+            <li><a href="portfolio.html">Portfólio Completo</a></li>
+            <li><a href="contato.html">Contato & Orçamentos</a></li>
+          </ul>
+        </div>
+
+        <!-- Verticals Col -->
+        <div>
+          <h4 class="footer-col-title">Especialidades</h4>
+          <ul class="footer-nav-list">
+            <li><a href="portfolio.html?cat=retratos">Retratos Fine Art</a></li>
+            <li><a href="portfolio.html?cat=editorial">Moda & Editorial</a></li>
+            <li><a href="portfolio.html?cat=casamentos">Casamentos Exclusivos</a></li>
+            <li><a href="portfolio.html?cat=arquitetura">Arquitetura & Espaços</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Col -->
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Fique Conectado</h4>
+          <p>Receba convites para exposições e lançamentos de ensaios exclusivos.</p>
+          <form class="footer-input-group" onsubmit="event.preventDefault(); alert('Obrigado! Você agora receberá nossas novidades.');">
+            <input type="email" placeholder="Seu e-mail..." required aria-label="Seu e-mail para newsletter">
+            <button type="submit" class="btn-icon-circle" style="width: 34px; height: 34px;" aria-label="Inscrever">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 FOTOVAR Studio. Todos os direitos reservados.
+        </div>
+        <div class="back-to-top-btn btn-magnetic">
+          <span>Voltar ao topo</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP 3 & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/global.js"></script>
+  <script src="js/sobre.js"></script>
+</body>
+</html>
+

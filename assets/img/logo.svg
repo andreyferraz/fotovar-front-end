@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 457" width="1024" height="457" fill="none">
+  <!-- Camera Outline -->
+  <path d="M300 240 C300 130 300 90 320 80 C340 70 410 70 435 55 C450 45 470 35 512 35 C554 35 574 45 589 55 C614 70 684 70 704 80 C724 90 724 130 724 240" 
+        stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Aperture Shutter Outer Ring & Blades -->
+  <circle cx="512" cy="205" r="95" stroke="currentColor" stroke-width="12" fill="none"/>
+  
+  <!-- Aperture Blades -->
+  <g stroke="currentColor" stroke-width="8" stroke-linecap="round" fill="currentColor">
+    <path d="M512 110 L560 170 L512 205 Z" opacity="0.9"/>
+    <path d="M594 157 L585 235 L535 220 Z" opacity="0.9"/>
+    <path d="M594 253 L525 275 L512 225 Z" opacity="0.9"/>
+    <path d="M512 300 L464 240 L512 205 Z" opacity="0.9"/>
+    <path d="M430 253 L439 175 L489 190 Z" opacity="0.9"/>
+    <path d="M430 157 L499 135 L512 185 Z" opacity="0.9"/>
+  </g>
+
+  <!-- Typography: F O T O V Ʌ R -->
+  <g font-family="'Syne', 'Montserrat', 'Helvetica Neue', sans-serif" font-weight="400" font-size="78" fill="currentColor" letter-spacing="38">
+    <text x="512" y="430" text-anchor="middle">FOTOV<tspan font-family="'Space Grotesk', sans-serif">Ʌ</tspan>R</text>
+  </g>
+</svg>
+

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato & Orçamentos | FOTOVAR Studio</title>
+  <meta name="description" content="Entre em contato com o FOTOVAR Studio para agendamento de ensaios fotográficos autorais, casamentos, editoriais e campanhas comerciais.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true">
+    <span class="cursor-text">VER</span>
+  </div>
+
+  <!-- Shutter Page Transition Curtain -->
+  <div class="shutter-transition" aria-hidden="true">
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo-wrap" aria-label="FOTOVAR Home">
+        <img src="assets/img/logo.png" alt="FOTOVAR" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="portfolio.html" class="nav-link">Portfólio</a>
+        <a href="contato.html" class="nav-link active">Contato</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="contato.html" class="btn btn-primary header-cta btn-magnetic">
+          <span>Agendar Sessão</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="menu-toggle-btn" aria-label="Abrir Menu" aria-expanded="false">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">
+        <span>01</span> Home
+      </a>
+      <a href="sobre.html" class="mobile-nav-link">
+        <span>02</span> Sobre
+      </a>
+      <a href="portfolio.html" class="mobile-nav-link">
+        <span>03</span> Portfólio
+      </a>
+      <a href="contato.html" class="mobile-nav-link active">
+        <span>04</span> Contato
+      </a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <a href="contato.html" class="btn btn-primary">
+        <span>Solicitar Orçamento</span>
+        <i class="fa-solid fa-camera"></i>
+      </a>
+      <div class="mobile-socials">
+        <a href="#" class="btn-icon-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="btn-icon-circle" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        <a href="#" class="btn-icon-circle" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: 3.5rem;">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Conexão & Agendamento</span>
+          <h1 class="section-title">Vamos Dar Vida à Sua Visão</h1>
+          <p class="section-desc">
+            Cada ensaio começa com um diálogo aberto. Preencha os detalhes do seu projeto abaixo para que possamos desenhar uma proposta artística sob medida.
+          </p>
+        </div>
+
+        <div class="contact-layout-grid">
+          
+          <!-- LEFT: INTERACTIVE BOOKING FORM -->
+          <div class="contact-form-card">
+            
+            <!-- Category Pills Wrap -->
+            <div class="service-pills-wrap">
+              <label class="form-group-label">Qual vertente melhor descreve seu projeto?</label>
+              <div class="service-pills-row">
+                <button type="button" class="service-pill-btn selected" data-service="Retrato Autoral">Retrato Autoral</button>
+                <button type="button" class="service-pill-btn" data-service="Casamento de Luxo">Casamento de Luxo</button>
+                <button type="button" class="service-pill-btn" data-service="Moda & Editorial">Moda & Editorial</button>
+                <button type="button" class="service-pill-btn" data-service="Arquitetura & Espaços">Arquitetura</button>
+                <button type="button" class="service-pill-btn" data-service="Campanha Comercial">Comercial / Marca</button>
+                <button type="button" class="service-pill-btn" data-service="Outro">Outro Formato</button>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <form id="booking-form" novalidate>
+              <input type="hidden" id="selected-service-input" value="Retrato Autoral">
+
+              <div class="form-fields-container">
+                <!-- Row 1 -->
+                <div class="form-grid-row two-cols">
+                  <div class="form-field">
+                    <label for="user-name" class="form-label">Seu Nome Completo *</label>
+                    <input type="text" id="user-name" class="form-input" placeholder="Ex: Isabella Vasconcelos" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="user-email" class="form-label">E-mail Profissional / Pessoal *</label>
+                    <input type="email" id="user-email" class="form-input" placeholder="seuemail@exemplo.com" required>
+                  </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="form-grid-row two-cols">
+                  <div class="form-field">
+                    <label for="user-phone" class="form-label">WhatsApp com DDD *</label>
+                    <input type="tel" id="user-phone" class="form-input" placeholder="(11) 98765-4321" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="user-date" class="form-label">Data Estimada / Período</label>
+                    <input type="text" id="user-date" class="form-input" placeholder="Ex: Outubro de 2026">
+                  </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="form-grid-row">
+                  <div class="form-field">
+                    <label for="user-budget" class="form-label">Investimento Previsto</label>
+                    <select id="user-budget" class="form-select">
+                      <option value="A combinar">Ainda estou definindo o orçamento</option>
+                      <option value="R$ 3.500 - R$ 7.000">R$ 3.500 a R$ 7.000 (Ensaios Autorais / Retratos)</option>
+                      <option value="R$ 8.000 - R$ 18.000">R$ 8.000 a R$ 18.000 (Editoriais / Casamentos Intimistas)</option>
+                      <option value="Acima de R$ 18.000">Acima de R$ 18.000 (Campanhas Globais / Destination Weddings)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="form-grid-row">
+                  <div class="form-field">
+                    <label for="user-message" class="form-label">Conte-nos sobre a sua ideia ou história *</label>
+                    <textarea id="user-message" class="form-textarea" placeholder="Descreva o conceito, locação de interesse, atmosfera desejada ou quaisquer referências que você tenha em mente..." required></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Row -->
+              <div class="form-submit-row">
+                <button type="submit" id="form-submit-btn" class="btn btn-primary btn-magnetic">
+                  <span>Enviar Solicitação</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+                <div class="form-privacy-note">
+                  <i class="fa-solid fa-lock" style="color: var(--accent); margin-right: 4px;"></i>
+                  Seus dados são confidenciais. Respondemos em até 24 horas úteis.
+                </div>
+              </div>
+            </form>
+
+            <!-- Success Celebration Message (Hidden initially) -->
+            <div class="form-success-message" role="alert">
+              <i class="fa-solid fa-circle-check"></i>
+              <h3>Mensagem Recebida com Sucesso!</h3>
+              <p>
+                Obrigado pelo contato. Nossa equipe de produção já recebeu suas informações e entrará em contato via WhatsApp/E-mail com uma proposta personalizada.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: STUDIO SIDEBAR & LOCATION -->
+          <div class="contact-sidebar">
+            
+            <div class="studio-info-card">
+              <h3 class="studio-info-title">
+                <i class="fa-solid fa-location-dot"></i> Estúdio Principal
+              </h3>
+              
+              <div class="studio-contact-list">
+                <div class="studio-contact-item">
+                  <i class="fa-solid fa-building"></i>
+                  <div>
+                    <div class="contact-detail-label">Endereço</div>
+                    <div class="contact-detail-val">
+                      Av. Brigadeiro Faria Lima, 3477<br>
+                      Itaim Bibi — São Paulo, SP
+                    </div>
+                  </div>
+                </div>
+
+                <div class="studio-contact-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <div>
+                    <div class="contact-detail-label">WhatsApp & Produção</div>
+                    <div class="contact-detail-val">
+                      <a href="tel:+5511987654321">+55 (11) 98765-4321</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="studio-contact-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div>
+                    <div class="contact-detail-label">E-mail Direto</div>
+                    <div class="contact-detail-val">
+                      <a href="mailto:contato@fotovarstudio.com.br">contato@fotovarstudio.com.br</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="studio-contact-item">
+                  <i class="fa-solid fa-clock"></i>
+                  <div>
+                    <div class="contact-detail-label">Horários de Atendimento</div>
+                    <div class="contact-detail-val">
+                      Segunda a Sexta: 09h às 19h<br>
+                      Ensaios aos fins de semana sob agendamento.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stylized Map Mockup -->
+            <div class="studio-map-card">
+              <div class="map-bg-pattern"></div>
+              <div class="map-pin-pulse">
+                <div class="map-pin-marker">
+                  <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="map-pin-label">FOTOVAR STUDIO • ITAIM BIBI</div>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; color: var(--accent); text-decoration: underline; margin-top: 4px; display: inline-block;">
+                  Abrir no Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-header">
+          <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Dúvidas Frequentes</span>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Respostas transparentes sobre o funcionamento de nossas sessões, entregas e metodologia de trabalho.
+          </p>
+        </div>
+
+        <div class="faq-accordion-list">
+          
+          <!-- Item 1 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span class="faq-question-text">Com quanto tempo de antecedência devo agendar meu ensaio ou evento?</span>
+              <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-answer-collapse">
+              <div class="faq-answer-body">
+                Para casamentos e grandes campanhas comerciais, recomendamos uma antecedência de 6 a 12 meses, garantindo reserva exclusiva da data. Para ensaios autorais e retratos em estúdio, nossa antecedência média recomendada é de 3 a 6 semanas.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span class="faq-question-text">Nunca fiz um ensaio profissional e fico tímido(a) na frente da câmera. Como funciona?</span>
+              <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-answer-collapse">
+              <div class="faq-answer-body">
+                Essa é a situação da grande maioria dos nossos clientes. Nosso método de direção é baseado em conversa, música ambiente e movimentos naturais, sem poses mecânicas ou forçadas. Criamos uma atmosfera segura onde você nem perceberá o som do obturador.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span class="faq-question-text">Qual é o prazo médio de entrega das fotos tratadas e álbuns impressos?</span>
+              <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-answer-collapse">
+              <div class="faq-answer-body">
+                Para ensaios autorais, uma prévia de 10 a 15 fotos é enviada em até 48 horas, com a galeria completa tratada em alta resolução finalizada em até 15 dias úteis. Para casamentos e livros fine art impressos em papel de algodão, o prazo de curadoria e encadernação artesanal é de 45 a 60 dias.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span class="faq-question-text">Vocês realizam viagens para ensaios e casamentos fora do Brasil?</span>
+              <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-answer-collapse">
+              <div class="faq-answer-body">
+                Sim, cerca de 40% das nossas produções anuais são realizadas fora de São Paulo e no exterior (Europa, América do Norte e outros estados do Brasil). Cuidamos de toda a logística de transporte do equipamento e locações para que você só precise se preocupar em viver o momento.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span class="faq-question-text">As fotos entregues recebem tratamento individual de imagem?</span>
+              <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-answer-collapse">
+              <div class="faq-answer-body">
+                Absolutamente. Não usamos filtros automáticos ou presets genéricos. Cada fotografia passa pela nossa bancada de colorimetria, calibrando tonalidades de pele, sombras, balanço de branco e curvas de contraste para preservar a naturalidade e criar o clima cinematográfico que caracteriza o estúdio.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Col -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo-wrap">
+            <img src="assets/img/logo.png" alt="FOTOVAR" class="brand-logo-img">
+          </a>
+          <p>
+            Estúdio fotográfico contemporâneo dedicado a registrar memórias, arte e marcas através de uma ótica cinematográfica e autoral.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+            <a href="#" class="footer-social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation Col -->
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre o Estúdio</a></li>
+            <li><a href="portfolio.html">Portfólio Completo</a></li>
+            <li><a href="contato.html">Contato & Orçamentos</a></li>
+          </ul>
+        </div>
+
+        <!-- Verticals Col -->
+        <div>
+          <h4 class="footer-col-title">Especialidades</h4>
+          <ul class="footer-nav-list">
+            <li><a href="portfolio.html?cat=retratos">Retratos Fine Art</a></li>
+            <li><a href="portfolio.html?cat=editorial">Moda & Editorial</a></li>
+            <li><a href="portfolio.html?cat=casamentos">Casamentos Exclusivos</a></li>
+            <li><a href="portfolio.html?cat=arquitetura">Arquitetura & Espaços</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Col -->
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Fique Conectado</h4>
+          <p>Receba convites para exposições e lançamentos de ensaios exclusivos.</p>
+          <form class="footer-input-group" onsubmit="event.preventDefault(); alert('Obrigado! Você agora receberá nossas novidades.');">
+            <input type="email" placeholder="Seu e-mail..." required aria-label="Seu e-mail para newsletter">
+            <button type="submit" class="btn-icon-circle" style="width: 34px; height: 34px;" aria-label="Inscrever">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 FOTOVAR Studio. Todos os direitos reservados.
+        </div>
+        <div class="back-to-top-btn btn-magnetic">
+          <span>Voltar ao topo</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP 3 CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/global.js"></script>
+  <script src="js/contato.js"></script>
+</body>
+</html>
+

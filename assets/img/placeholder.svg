@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181820" />
+      <stop offset="50%" stop-color="#0f0f13" />
+      <stop offset="100%" stop-color="#070709" />
+    </linearGradient>
+    <radialGradient id="amberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <filter id="blurFilter">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <circle cx="600" cy="400" r="300" fill="url(#amberGlow)" filter="url(#blurFilter)" />
+  
+  <!-- Grid Lines -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <line x1="400" y1="0" x2="400" y2="800" />
+    <line x1="800" y1="0" x2="800" y2="800" />
+    <line x1="0" y1="266" x2="1200" y2="266" />
+    <line x1="0" y1="533" x2="1200" y2="533" />
+  </g>
+  
+  <!-- Viewfinder corners -->
+  <g stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M50 50 L100 50 M50 50 L50 100" />
+    <path d="M1150 50 L1100 50 M1150 50 L1150 100" />
+    <path d="M50 750 L100 750 M50 750 L50 700" />
+    <path d="M1150 750 L1100 750 M1150 750 L1150 700" />
+  </g>
+  
+  <!-- Focus Box Center -->
+  <g stroke="#00e5ff" stroke-width="1.5" fill="none" opacity="0.8">
+    <rect x="560" y="360" width="80" height="80" rx="4" />
+    <line x1="600" y1="350" x2="600" y2="360" />
+    <line x1="600" y1="440" x2="600" y2="450" />
+    <line x1="550" y1="400" x2="560" y2="400" />
+    <line x1="640" y1="400" x2="650" y2="400" />
+  </g>
+  
+  <!-- Shutter Graphic -->
+  <g transform="translate(600, 400) scale(1.2)" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.2">
+    <circle r="120" />
+    <circle r="60" stroke="#f59e0b" />
+  </g>
+  
+  <!-- Caption -->
+  <text x="600" y="520" text-anchor="middle" fill="#ffffff" font-family="'Syne', sans-serif" font-size="28" font-weight="700" letter-spacing="4">FOTOVAR STUDIO</text>
+  <text x="600" y="555" text-anchor="middle" fill="#9ca3af" font-family="'Space Mono', monospace" font-size="14" letter-spacing="2">35mm • f/1.4 • 1/500s • ISO 100</text>
+</svg>
+

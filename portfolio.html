@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio & Obras | FOTOVAR Studio</title>
+  <meta name="description" content="Explore a galeria curada de ensaios fotográficos autorais, editoriais de moda, casamentos exclusivos e projetos arquitetônicos da FOTOVAR.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true">
+    <span class="cursor-text">VER</span>
+  </div>
+
+  <!-- Shutter Page Transition Curtain -->
+  <div class="shutter-transition" aria-hidden="true">
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+    <div class="shutter-blade"></div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo-wrap" aria-label="FOTOVAR Home">
+        <img src="assets/img/logo.png" alt="FOTOVAR" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="portfolio.html" class="nav-link active">Portfólio</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="contato.html" class="btn btn-primary header-cta btn-magnetic">
+          <span>Agendar Sessão</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="menu-toggle-btn" aria-label="Abrir Menu" aria-expanded="false">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">
+        <span>01</span> Home
+      </a>
+      <a href="sobre.html" class="mobile-nav-link">
+        <span>02</span> Sobre
+      </a>
+      <a href="portfolio.html" class="mobile-nav-link active">
+        <span>03</span> Portfólio
+      </a>
+      <a href="contato.html" class="mobile-nav-link">
+        <span>04</span> Contato
+      </a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <a href="contato.html" class="btn btn-primary">
+        <span>Solicitar Orçamento</span>
+        <i class="fa-solid fa-camera"></i>
+      </a>
+      <div class="mobile-socials">
+        <a href="#" class="btn-icon-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="btn-icon-circle" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        <a href="#" class="btn-icon-circle" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- PORTFOLIO HEADER -->
+    <section class="portfolio-header-section">
+      <div class="container">
+        <div class="portfolio-header-content">
+          <span class="section-tag"><i class="fa-solid fa-images"></i> Acervo Curado</span>
+          <h1 class="section-title">Nossas Obras & Ensaios</h1>
+          <p class="section-desc" style="margin: 0 auto;">
+            Uma seleção de ensaios e campanhas realizados nos últimos anos. Cada imagem carrega uma narrativa técnica, emotiva e exclusiva.
+          </p>
+
+          <!-- Interactive Filters -->
+          <div class="portfolio-filter-bar">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="retratos">Retratos Fine Art</button>
+            <button class="filter-btn" data-filter="editorial">Moda & Editorial</button>
+            <button class="filter-btn" data-filter="casamentos">Casamentos</button>
+            <button class="filter-btn" data-filter="arquitetura">Arquitetura</button>
+            <button class="filter-btn" data-filter="comercial">Comercial & Still</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="portfolio-grid-section">
+      <div class="container">
+        <div class="gallery-grid">
+          
+          <!-- Item 1: Retratos -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="retratos"
+                   data-title="Sombra & Alma"
+                   data-location="Estúdio Central, São Paulo"
+                   data-camera="Hasselblad X2D 100C"
+                   data-lens="XCD 80mm f/1.9"
+                   data-exposure="1/250s • f/2.2"
+                   data-iso="ISO 64"
+                   data-full-img="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" 
+                 alt="Sombra & Alma" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Retrato Fine Art</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Sombra & Alma</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 80mm f/1.9</span>
+                  <span><i class="fa-solid fa-location-dot"></i> São Paulo</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Casamentos -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="casamentos"
+                   data-title="Luz Toscana"
+                   data-location="Val d'Orcia, Toscana, Itália"
+                   data-camera="Leica SL2"
+                   data-lens="Summilux-SL 50mm f/1.4"
+                   data-exposure="1/1600s • f/1.4"
+                   data-iso="ISO 100"
+                   data-full-img="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
+                 alt="Luz Toscana" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Casamentos</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Luz Toscana</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 50mm f/1.4</span>
+                  <span><i class="fa-solid fa-location-dot"></i> Itália</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Editorial -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="editorial"
+                   data-title="Aura Noturna"
+                   data-location="Le Marais, Paris"
+                   data-camera="Sony A1"
+                   data-lens="FE 35mm f/1.4 GM"
+                   data-exposure="1/500s • f/1.8"
+                   data-iso="ISO 400"
+                   data-full-img="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" 
+                 alt="Aura Noturna" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Editorial & Moda</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Aura Noturna</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 35mm f/1.4</span>
+                  <span><i class="fa-solid fa-location-dot"></i> Paris</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Arquitetura -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="arquitetura"
+                   data-title="Concreto & Luz"
+                   data-location="Brasília, DF"
+                   data-camera="Canon EOS R5C"
+                   data-lens="TS-E 24mm f/3.5L II (Tilt-Shift)"
+                   data-exposure="1/125s • f/8.0"
+                   data-iso="ISO 100"
+                   data-full-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" 
+                 alt="Concreto & Luz" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Arquitetura</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Concreto & Luz</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 24mm TS-E</span>
+                  <span><i class="fa-solid fa-location-dot"></i> Brasília</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Comercial -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="comercial"
+                   data-title="Chronos Haute Horlogerie"
+                   data-location="Genebra, Suíça"
+                   data-camera="Hasselblad X2D 100C"
+                   data-lens="XCD 120mm f/3.5 Macro"
+                   data-exposure="1/160s • f/11"
+                   data-iso="ISO 64"
+                   data-full-img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" 
+                 alt="Chronos Relojoaria" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Comercial & Still</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Chronos Horlogerie</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 120mm Macro</span>
+                  <span><i class="fa-solid fa-location-dot"></i> Suíça</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: Retratos -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="retratos"
+                   data-title="Gênese Humana"
+                   data-location="Rio de Janeiro"
+                   data-camera="Fujifilm GFX 100 II"
+                   data-lens="GF 110mm f/2 R LM WR"
+                   data-exposure="1/320s • f/2.0"
+                   data-iso="ISO 100"
+                   data-full-img="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80" 
+                 alt="Gênese Humana" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Retrato Fine Art</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Gênese Humana</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 110mm f/2.0</span>
+                  <span><i class="fa-solid fa-location-dot"></i> Rio de Janeiro</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 7: Editorial -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="editorial"
+                   data-title="Geometria da Seda"
+                   data-location="Milão, Itália"
+                   data-camera="Leica M11 Monochrom"
+                   data-lens="Noctilux-M 50mm f/0.95 ASPH"
+                   data-exposure="1/1000s • f/1.2"
+                   data-iso="ISO 125"
+                   data-full-img="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" 
+                 alt="Geometria da Seda" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Editorial & Moda</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Geometria da Seda</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 50mm f/0.95</span>
+                  <span><i class="fa-solid fa-location-dot"></i> Milão</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 8: Casamentos -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="casamentos"
+                   data-title="O Véu & o Vento"
+                   data-location="Santorini, Grécia"
+                   data-camera="Sony A1"
+                   data-lens="FE 85mm f/1.2 GM"
+                   data-exposure="1/2500s • f/1.4"
+                   data-iso="ISO 100"
+                   data-full-img="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" 
+                 alt="O Véu & o Vento" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Casamentos</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">O Véu & o Vento</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 85mm f/1.2</span>
+                  <span><i class="fa-solid fa-location-dot"></i> Grécia</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 9: Arquitetura -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="arquitetura"
+                   data-title="Espiral do Vazio"
+                   data-location="Porto, Portugal"
+                   data-camera="Sony A7R V"
+                   data-lens="FE 12-24mm f/2.8 GM"
+                   data-exposure="1/60s • f/8.0"
+                   data-iso="ISO 100"
+                   data-full-img="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" 
+                 alt="Espiral do Vazio" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Arquitetura</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Espiral do Vazio</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 14mm f/2.8</span>
+                  <span><i class="fa-solid fa-location-dot"></i> Portugal</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 10: Comercial -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="comercial"
+                   data-title="Essência Aquática"
+                   data-location="Estúdio FOTOVAR"
+                   data-camera="Canon EOS R5"
+                   data-lens="RF 100mm f/2.8L Macro IS USM"
+                   data-exposure="1/200s • f/14"
+                   data-iso="ISO 100"
+                   data-full-img="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80" 
+                 alt="Essência Aquática" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Comercial & Still</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Essência Aquática</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 100mm Macro</span>
+                  <span><i class="fa-solid fa-location-dot"></i> Campanha</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 11: Retratos -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="retratos"
+                   data-title="Presença & Silêncio"
+                   data-location="São Paulo"
+                   data-camera="Hasselblad X2D 100C"
+                   data-lens="XCD 90mm f/2.5"
+                   data-exposure="1/400s • f/2.5"
+                   data-iso="ISO 64"
+                   data-full-img="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" 
+                 alt="Presença & Silêncio" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Retrato Fine Art</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Presença & Silêncio</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 90mm f/2.5</span>
+                  <span><i class="fa-solid fa-location-dot"></i> São Paulo</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 12: Editorial -->
+          <article class="portfolio-card has-view-cursor" 
+                   data-category="editorial"
+                   data-title="Monocromo Fluido"
+                   data-location="Nova York, EUA"
+                   data-camera="Leica SL2"
+                   data-lens="Vario-Elmarit-SL 24-90mm"
+                   data-exposure="1/800s • f/3.2"
+                   data-iso="ISO 200"
+                   data-full-img="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" 
+                 alt="Monocromo Fluido" 
+                 class="portfolio-card-img"
+                 onerror="this.onerror=null; this.src='assets/img/placeholder.svg';">
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-card-top">
+                <span class="portfolio-card-badge">Editorial & Moda</span>
+                <div class="portfolio-view-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+              <div class="portfolio-card-bottom">
+                <h3 class="portfolio-card-title">Monocromo Fluido</h3>
+                <div class="portfolio-card-specs">
+                  <span><i class="fa-solid fa-camera"></i> 50mm f/2.8</span>
+                  <span><i class="fa-solid fa-location-dot"></i> Nova York</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRE-FOOTER CTA -->
+    <section class="section-spacing" style="background: #08080a;">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="section-tag"><i class="fa-solid fa-sparkles"></i> Criação Sob Medida</span>
+          <h2 class="section-title">Gostou da Nossa Abordagem Estética?</h2>
+          <p class="section-desc" style="margin: 0 auto 2.5rem auto;">
+            Vamos criar uma narrativa fotográfica exclusiva para o seu projeto, marca ou celebração.
+          </p>
+          <a href="contato.html" class="btn btn-primary btn-magnetic">
+            <span>Solicitar Orçamento</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FULLSCREEN LIGHTBOX MODAL WITH EXIF -->
+  <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visualizador de Fotografia">
+    <!-- Header -->
+    <div class="lightbox-header">
+      <div class="lightbox-counter">01 / 12</div>
+      <button class="lightbox-close-btn" aria-label="Fechar (Esc)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Body -->
+    <div class="lightbox-body">
+      <button class="lightbox-nav-btn prev" aria-label="Foto anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <img src="" alt="Fotografia Ampliada" class="lightbox-img">
+
+      <button class="lightbox-nav-btn next" aria-label="Próxima foto">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Footer with Technical EXIF Telemetry -->
+    <div class="lightbox-footer">
+      <div>
+        <h4 class="lightbox-info-title">Título da Obra</h4>
+        <div class="lightbox-info-sub">Localização</div>
+      </div>
+
+      <div class="lightbox-exif-row">
+        <div class="lightbox-exif-item">
+          <i class="fa-solid fa-camera"></i>
+          <span id="exif-camera">Hasselblad X2D</span>
+        </div>
+        <div class="lightbox-exif-item">
+          <i class="fa-solid fa-circle-dot"></i>
+          <span id="exif-lens">80mm f/1.9</span>
+        </div>
+        <div class="lightbox-exif-item">
+          <i class="fa-solid fa-stopwatch"></i>
+          <span id="exif-exposure">1/500s • f/2.0</span>
+        </div>
+        <div class="lightbox-exif-item">
+          <i class="fa-solid fa-sliders"></i>
+          <span id="exif-iso">ISO 100</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Col -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo-wrap">
+            <img src="assets/img/logo.png" alt="FOTOVAR" class="brand-logo-img">
+          </a>
+          <p>
+            Estúdio fotográfico contemporâneo dedicado a registrar memórias, arte e marcas através de uma ótica cinematográfica e autoral.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+            <a href="#" class="footer-social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation Col -->
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre o Estúdio</a></li>
+            <li><a href="portfolio.html">Portfólio Completo</a></li>
+            <li><a href="contato.html">Contato & Orçamentos</a></li>
+          </ul>
+        </div>
+
+        <!-- Verticals Col -->
+        <div>
+          <h4 class="footer-col-title">Especialidades</h4>
+          <ul class="footer-nav-list">
+            <li><a href="portfolio.html?cat=retratos">Retratos Fine Art</a></li>
+            <li><a href="portfolio.html?cat=editorial">Moda & Editorial</a></li>
+            <li><a href="portfolio.html?cat=casamentos">Casamentos Exclusivos</a></li>
+            <li><a href="portfolio.html?cat=arquitetura">Arquitetura & Espaços</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Col -->
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Fique Conectado</h4>
+          <p>Receba convites para exposições e lançamentos de ensaios exclusivos.</p>
+          <form class="footer-input-group" onsubmit="event.preventDefault(); alert('Obrigado! Você agora receberá nossas novidades.');">
+            <input type="email" placeholder="Seu e-mail..." required aria-label="Seu e-mail para newsletter">
+            <button type="submit" class="btn-icon-circle" style="width: 34px; height: 34px;" aria-label="Inscrever">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 FOTOVAR Studio. Todos os direitos reservados.
+        </div>
+        <div class="back-to-top-btn btn-magnetic">
+          <span>Voltar ao topo</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP 3 CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/global.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
+
