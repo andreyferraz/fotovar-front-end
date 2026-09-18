@@ -798,11 +798,28 @@ body.menu-open .mobile-nav-overlay {
   font-size: 0.8rem;
   color: var(--text-secondary);
   cursor: pointer;
+  user-select: none;
   transition: color var(--transition-fast);
+  border-radius: 4px;
+  outline: none;
+}
+
+.back-to-top-btn i {
+  transition: transform var(--transition-fast);
 }
 
 .back-to-top-btn:hover {
   color: var(--accent);
+}
+
+.back-to-top-btn:hover i {
+  transform: translateY(-2px);
+}
+
+.back-to-top-btn:focus-visible {
+  color: var(--accent);
+  outline: 1px dashed var(--accent);
+  outline-offset: 4px;
 }
 
 /* Fallback Image Card */
