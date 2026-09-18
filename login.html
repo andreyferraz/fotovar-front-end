@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | FOTOVAR Studio</title>
+  <meta name="description" content="Acesse sua conta FOTOVAR Studio.">
+
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <header class="login-header">
+    <a href="index.html" class="brand-logo-wrap" aria-label="Voltar para a página inicial">
+      <img src="assets/img/logo.png" alt="FOTOVAR" class="brand-logo-img">
+    </a>
+    <a href="index.html" class="login-back-link">
+      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+      <span>Voltar ao site</span>
+    </a>
+  </header>
+
+  <main class="login-main">
+    <section class="login-panel" aria-labelledby="login-title">
+      <div class="login-mark" aria-hidden="true">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <span class="section-tag"><i class="fa-solid fa-lock"></i> Área reservada</span>
+      <h1 id="login-title">Acesse sua conta</h1>
+      <p class="login-intro">Entre para acompanhar seus projetos, galerias e entregas exclusivas.</p>
+
+      <form class="login-form" action="#" method="post">
+        <div class="form-field">
+          <label for="login-user" class="form-label">Usuário</label>
+          <div class="login-input-wrap">
+            <i class="fa-solid fa-user" aria-hidden="true"></i>
+            <input type="text" id="login-user" name="username" placeholder="Digite seu usuário" autocomplete="username" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="login-password" class="form-label">Senha</label>
+          <div class="login-input-wrap">
+            <i class="fa-solid fa-key" aria-hidden="true"></i>
+            <input type="password" id="login-password" name="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary login-submit">
+          <span>Entrar</span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/global.js"></script>
+</body>
+</html>

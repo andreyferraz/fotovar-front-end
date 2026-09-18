@@ -152,8 +152,17 @@ function initMobileMenu() {
 
   if (!toggleBtn || !overlay) return;
 
+  const closeMenu = () => {
+    document.body.classList.remove('menu-open');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    toggleBtn.setAttribute('aria-label', 'Abrir Menu');
+  };
+
   const toggle = () => {
     const isOpen = document.body.classList.toggle('menu-open');
+    toggleBtn.setAttribute('aria-expanded', String(isOpen));
+    toggleBtn.setAttribute('aria-label', isOpen ? 'Fechar Menu' : 'Abrir Menu');
+
     if (isOpen && typeof gsap !== 'undefined') {
       gsap.fromTo(
         navLinks,
@@ -166,9 +175,15 @@ function initMobileMenu() {
   toggleBtn.addEventListener('click', toggle);
 
   navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      document.body.classList.remove('menu-open');
-    });
+    link.addEventListener('click', closeMenu);
+  });
+
+  overlay.addEventListener('click', (event) => {
+    if (event.target === overlay) closeMenu();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMenu();
   });
 }
 

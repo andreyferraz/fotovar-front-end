@@ -400,6 +400,10 @@ body.cursor-view .custom-cursor-dot {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
+body.menu-open .site-header {
+  z-index: 1002;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -474,6 +478,26 @@ body.cursor-view .custom-cursor-dot {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.header-login {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: 50%;
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-fast);
+}
+
+.header-login:hover {
+  color: #000;
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.08);
 }
 
 .header-cta {

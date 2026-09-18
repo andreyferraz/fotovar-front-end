@@ -33,6 +33,7 @@
 .hero-content {
   position: relative;
   z-index: 2;
+  min-width: 0;
 }
 
 .hero-badge-row {
@@ -59,6 +60,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media (max-width: 767px) {
+  .hero-title {
+    overflow-wrap: anywhere;
+  }
+}
+
 .hero-description {
   font-size: clamp(1.05rem, 1.8vw, 1.25rem);
   color: var(--text-secondary);
@@ -77,6 +84,7 @@
 /* Hero Media Display */
 .hero-visual {
   position: relative;
+  min-width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
