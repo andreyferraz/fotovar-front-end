@@ -808,6 +808,39 @@ body.menu-open .mobile-nav-overlay {
   font-size: 0.85rem;
 }
 
+.footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.6rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .footer-copyright {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.footer-divider {
+  color: rgba(255, 255, 255, 0.2);
+  user-select: none;
+}
+
+.footer-dev-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.footer-dev-link:hover {
+  color: var(--accent);
+}
+
 @media (min-width: 768px) {
   .footer-bottom-bar {
     flex-direction: row;

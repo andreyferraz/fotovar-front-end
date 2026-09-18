@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initPageTransitions();
   initBackToTop();
+  initCurrentYear();
 });
 
 /* ==========================================================================
@@ -289,6 +290,17 @@ function initBackToTop() {
         scrollToTop(e);
       }
     });
+  });
+}
+
+/* ==========================================================================
+   7. DYNAMIC COPYRIGHT YEAR
+   ========================================================================== */
+function initCurrentYear() {
+  const currentYear = new Date().getFullYear();
+  const yearEls = document.querySelectorAll('.current-year');
+  yearEls.forEach((el) => {
+    el.textContent = currentYear;
   });
 }
 
